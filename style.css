@@ -489,7 +489,7 @@ section:not(:first-child) {
 .category__container {
     display: flex;
     flex-direction: column;
-    row-gap: 86px;
+    row-gap: 70px;
 }
 .category__items {
     display: flex;
@@ -589,7 +589,7 @@ section:not(:first-child) {
 .feature__container {
     display: flex;
     flex-direction: column;
-    row-gap: 86px;
+    row-gap: 75px;
 }
 .feature__content {
     display: flex;
@@ -626,3 +626,90 @@ section:not(:first-child) {
 }
 
 /* ------------------------------------------------------------- */
+
+.peculiarities {
+    background-color: #121212;
+}
+.peculiarities__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+    padding-bottom: 83px;
+}
+.peculiarities__title {
+    color: #FFFFFF;
+}
+.peculiarities__items {
+    display: flex;
+    flex-flow: wrap row;    
+    align-items: center;
+
+    row-gap: 100px;
+}
+.peculiarities__item {
+    width: 33.3333%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.peculiarities__img {
+    padding: 20px;
+    background: #262626;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.peculiarities__img img {
+    max-width: 35px;
+    min-width: 30px;
+}
+.peculiarities-item__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 12px;
+
+    max-width: 230px;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+.peculiarities-item__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+
+    max-width: 230px;
+
+    color: #666666;
+}
+
+@media (max-width: 767.98px) {
+    .peculiarities__items {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
+        row-gap: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .peculiarities__item {
+        width: 50%;
+    }
+}
+@media (max-width: 544.98px) {
+    .peculiarities__item {
+        width: 100%;
+    }
+}
