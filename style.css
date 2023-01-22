@@ -798,8 +798,7 @@ section:not(:first-child) {
 .slider {
 }
 
-@media (max-width: 1023.98px) {
-    
+@media (max-width: 1023.98px) {  
     .slider__img::before {
         display: none;
     }
@@ -819,7 +818,6 @@ section:not(:first-child) {
     }
     
 }
-
 @media (max-width: 767.98px) {
     .slider__title {
         font-size: 30px;
@@ -840,5 +838,110 @@ section:not(:first-child) {
 @media (max-width: 320.98) {
     .slider__text {
         font-size: 18px;
+    }
+}
+
+/* ------------------------------------------------------------- */
+
+
+.download__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.download__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.download__title {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+
+    color: var(--main-color);
+}
+.download__title span {
+    color: var(--second-color);
+}
+
+.download__app {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 25px;
+}
+
+.download__review {
+    position: relative;
+
+    min-width: 568px;
+    min-height: 533px;
+}
+.download__review::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    width: 568px;
+    height: 354px;
+    border-radius: 50%;
+    
+    background-color: var(--second-color);
+    
+}
+
+.review__img {
+    position: absolute;
+    z-index: 10;
+}
+.review-1 {
+    top: -15%;
+    left: -5%;
+}
+.review-2 {
+    bottom: -15%;
+    right: -5%;
+}
+
+@media(max-width: 767.98px) {
+    .download__review {
+        display: none;
+    }
+
+    .download__title {
+        font-size: 37px;
+    }
+}
+@media (max-width: 424.98px) {
+    .download__content {
+        row-gap: 40px;
+    }
+
+    .download__title {
+        font-size:33px;
+    }
+
+    .download-app__img img {
+        max-width: 150px;
+    }
+}
+@media (max-width: 374.98px) {
+    .download__title {
+        font-size: 28px;
+    }
+
+    .download__app {
+        column-gap: 15px;
+    }
+    .download-app__img img {
+        max-width: 135px;
     }
 }
