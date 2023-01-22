@@ -72,7 +72,7 @@ section:not(:last-child) {
 } 
 section:not(:first-child) {
     padding-top: 46px;
-} 
+}
 
 .btn {
     padding: 18px 48px;
@@ -324,7 +324,7 @@ section:not(:first-child) {
     font-style: normal;
     font-weight: 600;
     font-size: 44px;
-    line-height: 53px;
+    line-height: 45px;
 
     color: var(--main-color);
 }
@@ -711,5 +711,134 @@ section:not(:first-child) {
 @media (max-width: 544.98px) {
     .peculiarities__item {
         width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------- */
+
+.slider {
+    margin-top: 137px;
+}
+.slider__container {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 109px;
+}
+.slider__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.slider__img {
+    flex: 0 1 50%;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.slider__img::before {
+    content: "";
+    width: 285px;
+    height: 258px;
+    background: #FF6428;
+    border-radius: 40px 0px 400px 400px;
+    transform: rotate(-7.72deg);
+
+    position: absolute;
+    top: 20%;
+    left: 70px;
+    z-index: -1;
+}
+
+.slider__content {
+    flex: 0 1 50%;
+    font-family: 'Poppins';
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 524px;
+}
+
+.slider__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+
+    padding-bottom: 56px;
+
+    color: var(--third-color);
+}
+
+.slider__author {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+.author__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+
+    padding-bottom: 8px;
+    color: #000000;
+}
+.author__skill {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.08em;
+
+    color: var(--four-color);
+}
+
+.slider {
+}
+
+@media (max-width: 1023.98px) {
+    
+    .slider__img::before {
+        display: none;
+    }
+    .slider__img img {
+        max-width: 200px;
+    }
+    
+    .slider__text {
+        font-size: 20px;
+    }
+
+    .author__name {
+        font-size: 22px;
+    }
+    .author__skill {
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+    .slider__title {
+        font-size: 30px;
+    }
+    .slider__item {
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .slider__text {
+        text-align: left;
+    }
+    .slider__author {
+        text-align: right;
+    }
+}
+
+@media (max-width: 320.98) {
+    .slider__text {
+        font-size: 18px;
     }
 }
