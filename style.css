@@ -284,7 +284,7 @@ section:not(:first-child) {
     }
 }
 @media (max-width: 767.98px) {
-    section.page__main {
+    section.page__reviews {
         margin-bottom: 50px;
     }
 }
@@ -721,30 +721,26 @@ section:not(:first-child) {
 
 /* ------------------------------------------------------------- */
 
-.slider {
+.reviews {
     margin-top: 137px;
 }
-.slider__container {
-    display: flex;
-    flex-direction: column;
 
-    row-gap: 109px;
-}
-.slider__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+.reviews__title {
+    margin-bottom:109px;
 }
 
-.slider__img {
+.slide-swiper-reviews {
+    display: flex;
+}
+
+.slide-swiper-reviews__img {
     flex: 0 1 50%;
 
     display: flex;
     justify-content: center;
     position: relative;
 }
-.slider__img::before {
+.slide-swiper-reviews__img::before {
     content: "";
     width: 285px;
     height: 258px;
@@ -758,32 +754,35 @@ section:not(:first-child) {
     z-index: -1;
 }
 
-.slider__content {
+.slide-swiper-reviews__body {
     flex: 0 1 50%;
     font-family: 'Poppins';
     font-style: normal;
 
     display: flex;
     flex-direction: column;
-
-    max-width: 524px;
+    justify-content: center;
 }
 
-.slider__text {
+.slide-swiper-reviews__text {
     font-weight: 400;
     font-size: 24px;
     line-height: 160%;
 
-    padding-bottom: 56px;
-
     color: var(--third-color);
 }
+.slide-swiper-reviews__text:not(:last-child) {
+    margin-bottom: 56px;
+}
+.slide-swiper-reviews__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
 
-.slider__author {
+.slide-swiper-reviews__author {
     font-family: 'Poppins';
     font-style: normal;
 }
-.author__name {
+.slide-swiper-reviews__name {
     font-weight: 600;
     font-size: 24px;
     line-height: 160%;
@@ -791,7 +790,7 @@ section:not(:first-child) {
     padding-bottom: 8px;
     color: #000000;
 }
-.author__skill {
+.slide-swiper-reviews__skill {
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;
@@ -800,18 +799,34 @@ section:not(:first-child) {
     color: var(--four-color);
 }
 
-.slider {
+.swiper-reviews__pagination {
+    display: flex;
+    transform: translate(0px, -100%);
+    justify-content: flex-end;
+    align-items: center;
+}
+.swiper-reviews__pagination .swiper-pagination-bullet {
+    flex: 0 0 10px;
+    height: 16px;  
+    background: #C4C4C4;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+} 
+.swiper-reviews__pagination .swiper-pagination-bullet-active {
+    flex: 0 0 24px;
+    height: 12px;
+    background: #FF6428;
+    border-radius: 20px;
+    padding-right: 12px;
 }
 
 @media (max-width: 1023.98px) {  
-    .slider__img::before {
+    .slide-swiper-reviews__img::before {
         display: none;
     }
-    .slider__img img {
-        max-width: 200px;
-    }
     
-    .slider__text {
+    
+    .slide-swiper-reviews__text {
         font-size: 20px;
     }
 
@@ -823,23 +838,43 @@ section:not(:first-child) {
     } 
 }
 @media (max-width: 767.98px) {
-    .slider__title {
+    .slide-swiper-reviews__title {
         font-size: 30px;
     }
-    .slider__item {
+    .slide-swiper-reviews {
+        display: flex;
+        flex-direction: column;
+    }
+    .slide-swiper-reviews__item {
         justify-content: center;
         flex-direction: column;
         row-gap: 50px;
     }
-    .slider__text {
+
+    .slide-swiper-reviews__img {
+        margin-bottom: 40px;
+    }
+    .slide-swiper-reviews__img img {
+        max-width: 276px;
+    }
+
+    .slide-swiper-reviews__text {
+        text-align: center;
+    }
+    .slide-swiper-reviews__author {
         text-align: left;
     }
-    .slider__author {
-        text-align: right;
+}
+@media (max-width: 424.98px) {
+    .slide-swiper-reviews__text {
+        text-align: center;
+    }
+    .swiper-reviews__pagination {
+        margin-top: 35px;
     }
 }
-@media (max-width: 320.98) {
-    .slider__text {
+@media (max-width: 320.98px) {
+    .slide-swiper-reviews__text {
         font-size: 18px;
     }
 }
@@ -1113,7 +1148,7 @@ section:not(:first-child) {
         column-gap: 40px;
     }
 }
-@media (max-width: 424.98px) {
+@media (max-width: 767.98px) {
     .footer-main {
         row-gap: 50px;
         flex-direction: column;
