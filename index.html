@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Rhythm</title>
 </head>
 <body>
@@ -231,23 +232,62 @@
                     </div>
                 </div>
             </section>
-            <section class="page__slider slider">
-                <div class="slider__container">
-                    <div class="slider__title section__title">
+            <section class="page__reviews reviews">
+                <div class="reviews__container">
+                    <div class="reviews__title section__title">
                         <h2>What our <span> customer’s </span> say</h2>
                     </div>
-                    <div class="slider__item">
-                        <div class="slider__img"><img src="/assets/img/costumers/costumer1.png" alt="Photo Author"></div>
-                        <div class="slider__content">
-                            <p class="slider__text">“The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
-                            <div class="slider__author">
+                    <div class="reviews__swiper swiper-reviews swiper">
+                        <div class="swiper-reviews__wrapper swiper-wrapper">
+                          <div class="swiper-reviews__slide slide-swiper-reviews swiper-slide"> 
+                            <div class="slide-swiper-reviews__img"><img src="/assets/img/costumers/costumer1.png" alt="Photo Author"></div>
+                            <div class="slide-swiper-reviews__body">
+                                <p class="slide-swiper-reviews__text">“The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+                                <div class="slide-swiper-reviews__author">
+                                    <div class="slide-swiper-reviews__name">Ryan Wels</div>
+                                    <div class="slide-swiper-reviews__skill">PROFESSIONAL GUITARIST</div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-reviews__slide slide-swiper-reviews swiper-slide"> 
+                            <div class="slide-swiper-reviews__img"><img src="/assets/img/costumers/costumer1.png" alt="Photo Author"></div>
+                            <div class="slide-swiper-reviews__body">
+                                <p class="slide-swiper-reviews__text">“The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+                                <div class="slide-swiper-reviews__author">
+                                    <div class="slide-swiper-reviews__name">Ryan Wels</div>
+                                    <div class="slide-swiper-reviews__skill">PROFESSIONAL GUITARIST</div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-reviews__slide slide-swiper-reviews swiper-slide"> 
+                            <div class="slide-swiper-reviews__img"><img src="/assets/img/costumers/costumer1.png" alt="Photo Author"></div>
+                            <div class="slide-swiper-reviews__body">
+                                <p class="slide-swiper-reviews__text">“The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+                                <div class="slide-swiper-reviews__author">
+                                    <div class="slide-swiper-reviews__name">Ryan Wels</div>
+                                    <div class="slide-swiper-reviews__skill">PROFESSIONAL GUITARIST</div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-reviews__pagination"></div>
+                    </div>                    
+                </div>
+
+
+                <!-- <div class="reviews__swiper swiper-reviews swiper">
+                    <div class="swiper__item">
+                        <div class="swiper__img"><img src="/assets/img/costumers/costumer1.png" alt="Photo Author"></div>
+                        <div class="swiper__content">
+                            <p class="swiper__text">“The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+                            <div class="swiper__author">
                                 <div class="author__name">Ryan Wels</div>
                                 <div class="author__skill">PROFESSIONAL GUITARIST</div>
                             </div>
-                            <div class="slider__buttons"></div>
+                            <div class="swiper__buttons"></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <section class="page__download download">
                 <div class="download__container">
@@ -322,6 +362,7 @@
     
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
