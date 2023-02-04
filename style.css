@@ -284,6 +284,25 @@ section:not(:first-child) {
     }
 }
 @media (max-width: 767.98px) {
+    .main__content {
+        align-items: center;
+    }
+    .main__title {
+        text-align: center;
+    }
+    .main__text {
+        text-align: center;
+    }
+
+    .main__btn {
+        align-items: center;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .main-btn:not(:last-child) {
+        margin-right: 0;
+    }
+
     section.page__reviews {
         margin-bottom: 50px;
     }
